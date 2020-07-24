@@ -1,0 +1,13 @@
+1) grep -winr "Any Text" sample.txt
+    -w: searches for complete word
+    -i: case in-sensitive
+    -n: shows corresponding line number along with the search result in the search file
+    -r: recursively searches in subdirectories as well. Must be careful while using as if the directory structure is large, it may take a lot of time to search
+    
+2) grep -winr "Any Text" ./*
+    ./* searches the text in all files in the current directory
+    
+3) grep -winr "Any Text" ./*.csv
+    ./* searches the text in all .csv files in the current directory
+    
+    when we are using the -r flag, we need not give ./* in the end
