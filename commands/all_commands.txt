@@ -11,3 +11,21 @@
     ./* searches the text in all .csv files in the current directory
     
     when we are using the -r flag, we need not give ./* in the end
+
+4) grep -winl "Any Text" ./*.csv
+    -l: this will display distinct file paths that contains the matched search
+    
+5) grep -winc "Any Text" ./*.csv
+    -c: this will display distinct file with the count of matched string
+    
+6) grep history
+    shows recent history
+    
+6) grep history | "git commit"
+    we can use pipe '|' to search within our history. In this case we are searching for the text "git commit"
+    
+7) grep history | "git commit" | "-m"
+    we can use additional pipes '|' to search within our previous search. So it is like another search on the previous search results
+
+8) grep -P "\d{3}-\d{3}-\d{4}" sample.csv
+    This will match for phone number in the format xxx-xxx-xxxx in the file. We can use other regex expression to search for other cases like (xxx)-xxx-xxxx
